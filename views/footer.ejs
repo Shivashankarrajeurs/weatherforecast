@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <style>
+        /* Footer Styling */
+        .footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px 0;
+        }
+        .footer a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s ease-in-out;
+        }
+        .footer a:hover {
+            color: #0dcaf0;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 20px;
+        }
+
+        /* Responsive Alignment */
+        @media (max-width: 768px) {
+            .footer .col-md-4 {
+                text-align: center;
+            }
+            .footer .nav {
+                justify-content: center !important;
+                margin-top: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <footer class="footer d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+            <div class="col-md-4 d-flex align-items-center justify-content-md-start justify-content-center">
+                <span class="mb-3 mb-md-0">© 2024 Shivashankarrajeurs - All Rights Reserved</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-md-end justify-content-center list-unstyled d-flex social-icons">
+                <li>
+                    <a href="mailto:shivashankarrajeurs@gmail.com" class="d-flex align-items-center">
+                        <i class="bi bi-envelope-fill me-2"></i> Contact Us
+                    </a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
