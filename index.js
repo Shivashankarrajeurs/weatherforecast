@@ -1,11 +1,19 @@
 import express from "express";
 import axios from "axios";
 import bodyParser from "body-parser";
+import path from "path";
+import { fileURLToPath } from "url";
 import dotenv from 'dotenv';
 dotenv.config();
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const port =process.env.PORT||3000;
 const app = express();
+
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views"));
+
 
 const apikey = process.env.API_KEY; // API Key
 
